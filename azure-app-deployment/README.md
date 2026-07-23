@@ -39,6 +39,6 @@ This lab covers deploying a web application to Azure App Services with an automa
 
 ## Security considerations
 
-- Secrets (publish profile, connection strings) belong in Azure App Settings or GitHub Actions secrets — never committed to the repository.
+- Secrets (publish profile, connection strings) belong in Azure App Settings or GitHub Actions secrets and never committed to the repository.
 - The Free F1 tier is fine for a lab, but has no SLA and shares compute with other tenants; production workloads should move to a dedicated tier with scaling and backup configured.
 - I'd add branch protection on `main` and require a review before merge, so the deployment pipeline can't be triggered by an unreviewed push.
